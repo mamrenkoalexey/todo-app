@@ -5,9 +5,11 @@ Simple REST API for managing tasks. Built with Spring Boot + H2 in-memory databa
 ## Stack
 
 - Java 17
-- Spring Boot 3.2.4
+- Spring Boot 4.0.5
 - Spring Data JPA / H2
 - Maven
+- SpringDoc OpenAPI
+- JUnit 5 + Mockito
 
 ## Run
 
@@ -16,6 +18,13 @@ Simple REST API for managing tasks. Built with Spring Boot + H2 in-memory databa
 ```
 
 App starts on `http://localhost:8080`.
+
+## API Documentation 
+
+[Swagger](http://localhost:8080/swagger-ui/index.html)
+
+[OpenAPI JSON](http://localhost:8080/v3/api-docs)
+
 
 ## Endpoints
 
@@ -44,3 +53,6 @@ curl -X PUT http://localhost:8080/api/tasks/1 \
   -H "Content-Type: application/json" \
   -d '{"title": "buy milk", "status": "DONE"}'
 ```
+
+## Tests
+The project now includes unit tests for the Service layer.
