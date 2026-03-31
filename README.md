@@ -44,14 +44,14 @@ Create:
 ```bash
 curl -X POST http://localhost:8080/api/tasks \
   -H "Content-Type: application/json" \
-  -d '{"title": "buy milk", "status": "NEW"}'
+  -d '{"title": "create test task", "status": "NEW"}'
 ```
 
 Update status:
 ```bash
 curl -X PUT http://localhost:8080/api/tasks/1 \
   -H "Content-Type: application/json" \
-  -d '{"title": "buy milk", "status": "DONE"}'
+  -d '{"title": "update test task", "status": "DONE"}'
 ```
 
 ## Tests
